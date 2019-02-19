@@ -1,20 +1,20 @@
 <?php
-/*
-Plugin Name: SMNTCS Wapuu Widget
-Plugin URI: n/a
-Description: Sidebar widget to show random Wapuu
-Author: Niels Lange
-Author URI: https://nielslange.com
-Text Domain: smntcs-wapuu-widget
-Domain Path: /languages/
-Version: 1.1
-Requires at least: 3.4
-Tested up to: 4.9
-License: GPLv2
-License URI: https://www.gnu.org/licenses/gpl-2.0.html
-*/
+/**
+ * Plugin Name: SMNTCS Wapuu Widget
+ * Plugin URI: https://github.com/nielslange/smntcs-simple-events-widget
+ * Description: Sidebar widget to show random Wapuu
+ * Author: Niels Lange
+ * Author URI: https://nielslange.com
+ * Text Domain: smntcs-wapuu-widget
+ * Domain Path: /languages/
+ * Version: 1.2
+ * Requires at least: 3.4
+ * Tested up to: 5.0
+ * License: GPLv2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ */
 
-/*  Copyright 2014-2016	Niels Lange (email : info@nielslange.de)
+/* Copyright 2014-2016	Niels Lange (email : info@nielslange.de)
 
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
