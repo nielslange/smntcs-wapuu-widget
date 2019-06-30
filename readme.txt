@@ -3,9 +3,10 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3GCXFAPDW85GA
 Tags: Wapuu, Widget, Sidebar
+Stable tag: 1.5
 Requires at least: 3.4
-Tested up to: 5.1
-Stable tag: 1.4
+Tested up to: 5.2
+Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,15 +29,18 @@ Sidebar widget to show random Wapuu
 
 == Changelog ==
 
+= 1.5 =
+* Test up to 5.2
+
 = 1.4 =
-* Added new Wapuus
+* Add new Wapuus
 
 = 1.3 =
-* Tested up to 5.1
+* Test up to 5.1
 
 = 1.2 =
-* Added README.md
-* Tested up to 5.0
+* Add README.md
+* Test up to 5.0
 
 = 1.1 =
 * Fix issue with relative image link

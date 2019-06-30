@@ -3,36 +3,28 @@
  * Plugin Name: SMNTCS Wapuu Widget
  * Plugin URI: https://github.com/nielslange/smntcs-simple-events-widget
  * Description: Sidebar widget to show random Wapuu
- * Author: Niels Lange
- * Author URI: https://nielslange.com
+ * Author: Niels Lange <info@nielslange.de>
+ * Author URI: https://nielslange.de
  * Text Domain: smntcs-wapuu-widget
  * Domain Path: /languages/
- * Version: 1.4
+ * Version: 1.5
  * Requires at least: 3.4
- * Tested up to: 5.1
- * License: GPLv2
+ * Tested up to: 5.2
+ * Requires PHP: 5.6
+ * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * @category   Plugin
+ * @package    WordPress
+ * @subpackage SMNTCS Wapuu Widget
+ * @author     Niels Lange <info@nielslange.de>
+ * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
  */
 
-/* Copyright 2014-2016	Niels Lange (email : info@nielslange.de)
-
-This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 2 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
-*/
-
 // Avoid direct plugin access
-if ( !defined( 'ABSPATH' ) ) exit;
+if ( ! defined( 'ABSPATH' ) ) {
+	die( '¯\_(ツ)_/¯' );
+}
 
 // Load text domain
 add_action('plugins_loaded', 'smntcs_wapuu_widget_plugins_loaded');
