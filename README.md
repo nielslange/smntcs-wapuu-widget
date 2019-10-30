@@ -1,6 +1,6 @@
 # SMNTCS Wapuu Widget
 
-[![](https://img.shields.io/github/license/nielslange/smntcs-wapuu-widget.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+[![](https://img.shields.io/github/license/nielslange/smntcs-wapuu-widget.svg)](https://www.gnu.org/licenses/gpl.html)
 [![](https://plugintests.com/plugins/smntcs-wapuu-widget/wp-badge.svg)](https://plugintests.com/plugins/smntcs-wapuu-widget/latest)
 [![](https://plugintests.com/plugins/smntcs-wapuu-widget/php-badge.svg)](https://plugintests.com/plugins/smntcs-wapuu-widget/latest)
 [![](https://img.shields.io/wordpress/plugin/dt/smntcs-wapuu-widget.svg)](https://wordpress.org/plugins/smntcs-wapuu-widget/)
