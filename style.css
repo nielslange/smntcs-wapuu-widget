@@ -1,5 +1,5 @@
 .wapuu {
-  display: block;
-  max-width: 250px;
-  margin: auto;
+	display: block;
+	margin: auto;
+	max-width: 100%;
 }
