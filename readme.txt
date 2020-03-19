@@ -3,9 +3,9 @@
 Contributors: nielslange
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3GCXFAPDW85GA
 Tags: Wapuu, Widget, Sidebar
-Stable tag: 1.5
+Stable tag: 1.6
 Requires at least: 3.4
-Tested up to: 5.2
+Tested up to: 5.4
 Requires PHP: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -28,6 +28,9 @@ Sidebar widget to show random Wapuu
 2. Add *Wapuu Widget* to the required widget area
 
 == Changelog ==
+
+= 1.6 =
+* Test up to 5.4
 
 = 1.5 =
 * Test up to 5.2
