@@ -240,7 +240,6 @@ function smntcs_get_random_image_url() {
 		'cowpuu-jacksonvill-pin@3x-230x237.png',
 		'crab_wapuu-230x230.png',
 		'cropped-wapuu-brno-512-512-230x230.png',
-		'cropped-決定_フルカラーロックわぷー02-230x230.png',
 		'cubby-wapuu-230x232.png',
 		'david-bowie-wapuu-230x203.png',
 		'delhi-wapuu-2017-230x316.png',
