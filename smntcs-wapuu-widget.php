@@ -1,53 +1,38 @@
 <?php
 /**
  * Plugin Name: SMNTCS Wapuu Widget
- * Plugin URI: https://github.com/nielslange/smntcs-simple-events-widget
+ * Plugin URI: https://github.com/nielslange/smntcs-wapuu-widget
  * Description: Sidebar widget to show random Wapuu
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-wapuu-widget
- * Domain Path: /languages/
  * Version: 1.6
- * Requires at least: 3.4
+ * Stable tag: 1.6
  * Tested up to: 5.4
+ * Requires at least: 3.4
  * Requires PHP: 5.6
- * License: GPL2+
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ * License: GPLv2 or later
+ * License URI: https://opensource.org/licenses/GPL-2.0
  *
  * @category   Plugin
  * @package    WordPress
  * @subpackage SMNTCS Wapuu Widget
  * @author     Niels Lange <info@nielslange.de>
- * @license    http://opensource.org/licenses/gpl-license.php GNU Public License
+ * @license    https://opensource.org/licenses/GPL-2.0 GNU Public License version 2
  */
 
+// Avoid direct plugin access.
+defined( 'ABSPATH' ) || exit;
+
+/**
+ * Fetch plugin version.
+ */
 $plugin_data    = get_file_data( __FILE__, array( 'Version' => 'Version' ), false );
 $plugin_version = $plugin_data['Version'];
 define( 'SMNTCS_WAPUU_WIDGET_CURRENT_VERSION', $plugin_version );
 
 /**
- * Avoid direct plugin access
- *
- * @since 1.0.0
- */
-if ( ! defined( 'ABSPATH' ) ) {
-	die( '¯\_(ツ)_/¯' );
-}
-
-/**
- * Load text domain
- *
- * @since 1.0.0
- */
-function smntcs_wapuu_widget_plugins_loaded() {
-	load_plugin_textdomain( 'smntcs-wapuu-widget', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
-}
-add_action( 'plugins_loaded', 'smntcs_wapuu_widget_plugins_loaded' );
-
-/**
  * Load plugin styles
- *
- * @since 1.0.0
  */
 function smntcs_wapuu_widget_enqueue_scripts() {
 	wp_register_style( 'smntcs_wapuu_widget-style', plugins_url( 'style.css', __FILE__ ), array(), SMNTCS_WAPUU_WIDGET_CURRENT_VERSION );
@@ -60,7 +45,6 @@ add_action( 'wp_enqueue_scripts', 'smntcs_wapuu_widget_enqueue_scripts' );
  *
  * @param string $links The original settings link on the plugin page.
  * @return string $links The updated settings link on the plugin page.
- * @since 1.0.0
  */
 function smntcs_wapuu_widget_plugin_settings_link( $links ) {
 	$admin_url    = admin_url( 'widgets.php' );
@@ -73,15 +57,11 @@ add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_wapuu_
 
 /**
  * Register SMNTCS Wapuu Widget
- *
- * @since 1.0.0
  */
 class SMNTCS_Wapuu_Widget extends WP_Widget {
 
 	/**
 	 * Construct widget
-	 *
-	 * @since 1.0.0
 	 */
 	public function __construct() {
 
@@ -99,18 +79,29 @@ class SMNTCS_Wapuu_Widget extends WP_Widget {
 	 *
 	 * @param array $args Display arguments including 'before_title', 'after_title', 'before_widget', and 'after_widget'.
 	 * @param array $instance The settings for the particular instance of the widget.
-	 * @since 1.0.0
 	 */
 	public function widget( $args, $instance ) {
 		$title = apply_filters( 'widget_title', $instance['title'] );
 		$image = smntcs_get_random_image_url();
-		
-		if ( ! empty( $title ) ) {
-			print( $args['before_widget'] . $args['before_title'] . esc_html( $title ) . $args['after_title'] );
-		}
 
-		printf( '<p><img src="%s" alt="" class="wapuu"></p>', esc_html( plugin_dir_url( __FILE__ ) ) . 'images/' . esc_html( $image ) );
-		printf( $args['after_widget'] );
+		printf(
+			'%s %s %s %s',
+			$args['before_widget'], // phpcs:ignore.
+			$args['before_title'],  // phpcs:ignore.
+			esc_attr( $title ),
+			$args['after_title']    // phpcs:ignore.
+		);
+
+		printf(
+			'<p><img src="%s" alt="" class="wapuu"></p>',
+			esc_html( plugin_dir_url( __FILE__ ) . 'images/' . $image )
+		);
+
+		printf(
+			'%s',
+			$args['after_widget'] // phpcs:ignore.
+		);
+
 	}
 
 	/**
@@ -118,7 +109,6 @@ class SMNTCS_Wapuu_Widget extends WP_Widget {
 	 *
 	 * @param array $instance Current settings.
 	 * @return void
-	 * @since 1.0.0
 	 */
 	public function form( $instance ) {
 
@@ -151,8 +141,6 @@ class SMNTCS_Wapuu_Widget extends WP_Widget {
 
 /**
  * Register widget
- *
- * @since 1.0.0
  */
 function smntcs_register_wapuu_widget() {
 	register_widget( 'SMNTCS_Wapuu_Widget' );
@@ -162,11 +150,10 @@ add_action( 'widgets_init', 'smntcs_register_wapuu_widget' );
 /**
  * Get random image URL
  *
- * @return string 
- * @since 1.0.0
+ * @return string
  */
 function smntcs_get_random_image_url() {
-	$image = [
+	$image = array(
 		'10uppu-230x230.png',
 		'8-bit-wapuu-large-230x288.png',
 		'80s-wapuu-230x212.png',
@@ -503,8 +490,8 @@ function smntcs_get_random_image_url() {
 		'wordcamp-tokyo-wapuu-2012-230x233.png',
 		'wordpress_chs_wapuu-230x263.png',
 		'wordpress_wapuu_1080x1265-230x269.png',
-		'xiru-wapuu-230x230.png'
-	];
+		'xiru-wapuu-230x230.png',
+	);
 
-	return $image[rand(0, count($image)-1)];
+	return $image[ wp_rand( 0, count( $image ) - 1 ) ];
 }

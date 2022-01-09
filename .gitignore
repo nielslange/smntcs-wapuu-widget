@@ -1,0 +1,6 @@
+cypress
+node_modules
+vendor
+/.DS_Store
+/.phplint.cache
+/.phpcs.cache
