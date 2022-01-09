@@ -6,9 +6,9 @@
  * Author: Niels Lange <info@nielslange.de>
  * Author URI: https://nielslange.de
  * Text Domain: smntcs-wapuu-widget
- * Version: 1.6
- * Stable tag: 1.6
- * Tested up to: 5.4
+ * Version: 1.7
+ * Stable tag: 1.7
+ * Tested up to: 5.8
  * Requires at least: 3.4
  * Requires PHP: 5.6
  * License: GPLv2 or later

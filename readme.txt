@@ -2,9 +2,9 @@
 
 Contributors: nielslange
 Tags: Wapuu, Widget, Sidebar
-Version: 1.6
-Stable tag: 1.6
-Tested up to: 5.4
+Version: 1.7
+Stable tag: 1.7
+Tested up to: 5.8
 Requires at least: 3.4
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -32,6 +32,9 @@ Sidebar widget to show random Wapuu.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-wapuu-widget/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.7 (2022.01.09) =
+* Test up to 5.8
 
 = 1.6 (2020.03.19) =
 * Test up to 5.4
