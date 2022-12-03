@@ -1,27 +1,20 @@
 <?php
 /**
- * Plugin Name: SMNTCS Wapuu Widget
- * Plugin URI: https://github.com/nielslange/smntcs-wapuu-widget
- * Description: Sidebar widget to show random Wapuu
- * Author: Niels Lange <info@nielslange.de>
- * Author URI: https://nielslange.de
- * Text Domain: smntcs-wapuu-widget
- * Version: 1.7
- * Stable tag: 1.7
- * Tested up to: 5.8
- * Requires at least: 3.4
- * Requires PHP: 5.6
- * License: GPLv2 or later
- * License URI: https://opensource.org/licenses/GPL-2.0
+ * Plugin Name:           SMNTCS Wapuu Widget
+ * Plugin URI:            https://github.com/nielslange/smntcs-wapuu-widget
+ * Description:           Sidebar widget to show random Wapuu.
+ * Author:                Niels Lange
+ * Author URI:            https://nielslange.de
+ * Text Domain:           smntcs-wapuu-widget
+ * Version:               1.8
+ * Requires PHP:          5.6
+ * Requires at least:     3.4
+ * License:               GPL v2 or later
+ * License URI:           https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @category   Plugin
- * @package    WordPress
- * @subpackage SMNTCS Wapuu Widget
- * @author     Niels Lange <info@nielslange.de>
- * @license    https://opensource.org/licenses/GPL-2.0 GNU Public License version 2
+ * @package SMNTCS_Wapuu_Widget
  */
 
-// Avoid direct plugin access.
 defined( 'ABSPATH' ) || exit;
 
 /**
@@ -46,12 +39,12 @@ add_action( 'wp_enqueue_scripts', 'smntcs_wapuu_widget_enqueue_scripts' );
  * @param string $links The original settings link on the plugin page.
  * @return string $links The updated settings link on the plugin page.
  */
-function smntcs_wapuu_widget_plugin_settings_link( $links ) {
-	$admin_url    = admin_url( 'widgets.php' );
-	$settings_url = sprintf( '<a href="%s">%s</a>', $admin_url, __( 'Settings', 'smntcs-wapuu-widget' ) );
-	array_unshift( $links, $settings_url );
+function smntcs_wapuu_widget_plugin_settings_link( $url ) {
+	$admin_url     = admin_url( 'widgets.php' );
+	$settings_link = sprintf( '<a href="%s">%s</a>', $admin_url, __( 'Settings', 'smntcs-wapuu-widget' ) );
+	array_unshift( $url, $settings_link );
 
-	return $links;
+	return $url;
 }
 add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), 'smntcs_wapuu_widget_plugin_settings_link' );
 
