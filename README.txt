@@ -2,8 +2,8 @@
 
 Contributors:       nielslange
 Tags:               Wapuu, Widget, Sidebar
-Stable tag:         1.8
-Tested up to:       6.1
+Stable tag:         1.9
+Tested up to:       6.5
 Requires PHP:       5.6
 Requires at least:  3.4
 License:            GPL v2 or later
@@ -31,6 +31,10 @@ Sidebar widget to show random Wapuu.
 Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-wapuu-widget/pulls) and open a pull request.
 
 == Changelog ==
+
+= 1.9 (2024.04.07) =
+
+- Test up to WP 6.5
 
 = 1.8 (2022.12.03) =
 
