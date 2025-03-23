@@ -2,9 +2,9 @@
 
 Contributors:       nielslange
 Tags:               Wapuu, Widget, Sidebar
-Stable tag:         1.8
-Tested up to:       6.1
-Requires PHP:       5.6
+Stable tag:         1.9
+Tested up to:       6.8
+Requires PHP:       7.4
 Requires at least:  3.4
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
@@ -32,21 +32,25 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
+= 1.9 (2025.03.23) =
+
+- Tested up to WordPress 6.8
+
 = 1.8 (2022.12.03) =
 
-- Test up to WP 6.1
+- Tested up to WordPress 6.1
 
 = 1.7 (2022.01.09) =
 
-- Test up to WP 5.8
+- Tested up to WordPress 5.8
 
 = 1.6 (2020.03.19) =
 
-- Test up to WP 5.4
+- Tested up to WordPress 5.4
 
 = 1.5 (2019.06.30) =
 
-- Test up to WP 5.2
+- Tested up to WordPress 5.2
 
 = 1.4 (2019.03.01) =
 
@@ -54,12 +58,12 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 = 1.3 (2019.02.19) =
 
-- Test up to WP 5.1
+- Tested up to WordPress 5.1
 
 = 1.2 (2019.02.19) =
 
 - Add README.md
-- Test up to WP 5.0
+- Tested up to WordPress 5.0
 
 = 1.1 (2019.02.19) =
 

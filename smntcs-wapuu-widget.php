@@ -6,7 +6,7 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-wapuu-widget
- * Version:               1.8
+ * Version:               1.9
  * Requires PHP:          5.6
  * Requires at least:     3.4
  * License:               GPL v2 or later
@@ -36,8 +36,8 @@ add_action( 'wp_enqueue_scripts', 'smntcs_wapuu_widget_enqueue_scripts' );
 /**
  * Add settings link on plugin page
  *
- * @param string $links The original settings link on the plugin page.
- * @return string $links The updated settings link on the plugin page.
+ * @param string[] $url The original settings link on the plugin page.
+ * @return string[] $url The updated settings link on the plugin page.
  */
 function smntcs_wapuu_widget_plugin_settings_link( $url ) {
 	$admin_url     = admin_url( 'widgets.php' );
