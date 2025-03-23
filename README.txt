@@ -32,7 +32,7 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
-### 2.0 (2025.03.23) =
+= 2.0 (2025.0.3.23) =
 
 - Tested up to WordPress 6.8
 

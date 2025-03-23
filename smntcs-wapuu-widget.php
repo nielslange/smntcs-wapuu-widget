@@ -7,7 +7,7 @@
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-wapuu-widget
  * Version:               2.0
- * Requires PHP:          5.6
+ * Requires PHP:          7.4
  * Requires at least:     3.4
  * License:               GPL v2 or later
  * License URI:           https://www.gnu.org/licenses/gpl-2.0.html

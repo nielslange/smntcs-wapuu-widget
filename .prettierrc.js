@@ -1,4 +1,21 @@
+const defaultConfig = require( '@wordpress/prettier-config' );
+
 module.exports = {
-	...require( '@wordpress/prettier-config' ),
-	tabWidth: 2,
+	...defaultConfig,
+
+	overrides: [
+		{
+			files: '*.yml',
+			options: {
+				tabWidth: 2,
+			},
+		},
+		{
+			files: '*.md',
+			options: {
+				tabWidth: 2,
+				listItemIndent: 'one',
+			},
+		},
+	],
 };
