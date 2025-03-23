@@ -24,9 +24,13 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-wapuu-widget/.
 
 ## Changelog
 
-### 1.9 (2025.03.23) =
+### 2.0 (2025.03.23) =
 
-- Tested up to WordPress 6.8
+- Test up to WP 6.8
+
+### 1.9 (2024.04.07) =
+
+- Test up to WP 6.5
 
 ### 1.8 (2022.12.03)
 

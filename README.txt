@@ -2,7 +2,7 @@
 
 Contributors:       nielslange
 Tags:               Wapuu, Widget, Sidebar
-Stable tag:         1.9
+Stable tag:         2.0
 Tested up to:       6.8
 Requires PHP:       7.4
 Requires at least:  3.4
@@ -32,9 +32,13 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
-= 1.9 (2025.03.23) =
+### 2.0 (2025.03.23) =
 
 - Tested up to WordPress 6.8
+
+= 1.9 (2024.04.07) =
+
+- Tested up to WordPress 6.5
 
 = 1.8 (2022.12.03) =
 
