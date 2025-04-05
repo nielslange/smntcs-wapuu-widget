@@ -15,9 +15,6 @@
 			"email": "info@nielslange.de"
 		}
 	],
-	"require": {
-		"php": ">=7.3"
-	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "1.0.0",
 		"overtrue/phplint": "9.5.6",
