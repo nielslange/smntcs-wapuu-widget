@@ -4,3 +4,7 @@ vendor
 /.DS_Store
 /.phplint.cache
 /.phpcs.cache
+cypress/screenshots
+cypress/videos
+playwright-report
+test-results

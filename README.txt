@@ -1,19 +1,19 @@
 === SMNTCS Wapuu Widget ===
 
 Contributors:       nielslange
-Tags:               Wapuu, Widget, Sidebar
-Stable tag:         2.1
-Tested up to:       7.0
-Requires PHP:       7.4
+Tags:               wapuu, widget, sidebar, fun, mascot
 Requires at least:  3.4
+Tested up to:       7.1
+Requires PHP:       7.4
+Stable tag:         2.2
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-Sidebar widget to show random Wapuu.
+Shows a random Wapuu, the WordPress mascot, in any widget area.
 
 == Description ==
 
-Sidebar widget to show random Wapuu.
+Wapuu is the much-loved mascot of the WordPress community. SMNTCS Wapuu Widget shows a different Wapuu every time a page loads. Add the Wapuu Widget to any widget area and enjoy.
 
 == Installation ==
 
@@ -28,9 +28,14 @@ Sidebar widget to show random Wapuu.
 
 == Contribute ==
 
-Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-wapuu-widget/pulls) and open a pull request.
+Contributions are more than welcome. Simply head over to [GitHub](https://github.com/nielslange/smntcs-wapuu-widget/pulls) and open a pull request.
 
 == Changelog ==
+
+= 2.2 (2026.09.26) =
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
 
 = 2.1 (2026.08.14) =
 
