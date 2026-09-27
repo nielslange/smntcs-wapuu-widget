@@ -3,12 +3,12 @@
 ![Support Level](https://img.shields.io/badge/support-active-green.svg)
 ![Build Status](https://github.com/nielslange/smntcs-wapuu-widget/actions/workflows/test.yml/badge.svg)
 ![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-wapuu-widget.svg)
-![Compatible to WordPress version](https://plugintests.com/plugins/smntcs-wapuu-widget/wp-badge.svg)
-![Compatible to PHP version](https://plugintests.com/plugins/smntcs-wapuu-widget/php-badge.svg)
+![Compatible to WordPress version](https://img.shields.io/wordpress/plugin/tested/smntcs-wapuu-widget.svg)
+![Compatible to PHP version](https://img.shields.io/wordpress/plugin/required-php/smntcs-wapuu-widget.svg)
 ![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-wapuu-widget.svg)
 ![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-wapuu-widget.svg)
 ![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-wapuu-widget.svg)
-![Deploy to WordPress.org](https://github.com/nielslange/smntcs-wapuu-widget/workflows/Deploy%20to%20WordPress.org/badge.svg)
+![Deploy to WordPress.org](https://github.com/nielslange/smntcs-wapuu-widget/actions/workflows/deploy.yml/badge.svg)
 
 Sidebar widget to show random Wapuu.
 
